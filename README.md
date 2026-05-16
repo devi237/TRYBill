@@ -1,19 +1,30 @@
-"# TRYBill" 
-Billing System GUI in Java
+Finance Management System
 
-A simple and user-friendly Billing System Application developed using Java Swing GUI.
-This project helps automate bill generation by calculating totals, GST, and generating a formatted receipt.
+A Java Swing-based desktop application that combines:
+
+Billing System
+Personal Expense Tracker
+Profit Dashboard
+
+This project helps users manage sales, track expenses, and calculate profit in a simple GUI application.
 
 Features
-GUI-based Billing System
-Add Multiple Products
-Automatic Total Calculation
-GST (18%) Calculation
-Generate Bill Receipt
+Billing System
+Add Products
+Generate Bills
 Product Table using JTable
-Clear Bill Option
-Exit Button
-Date & Time Display
+Automatic Sales Calculation
+Bill Receipt Generation
+Expense Tracker
+Add Expenses
+Delete Expenses
+Expense Categories
+Expense Table using JTable
+Expense Total Calculation
+Dashboard
+Net Profit Calculation
+Sales Overview
+Expense Overview
 Technologies Used
 Java
 Java Swing
@@ -21,12 +32,12 @@ AWT
 JTable
 Event Handling
 Project Structure
-BillingSystem/
+FinanceManagementSystem/
 │
-└── BillingSystemGUI.java
+├── FinanceManagementSystem.java
+└── README.md
 Requirements
 Java JDK 8 or above
-Any Java IDE or Text Editor
 
 Recommended IDEs:
 
@@ -35,76 +46,93 @@ IntelliJ IDEA
 Eclipse IDE
 Apache NetBeans
 How to Run
-Step 1: Clone or Download Project
-git clone <repository-url>
+Step 1: Open Terminal in Project Folder
+cd FinanceManagementSystem
+Step 2: Compile Java File
+javac FinanceManagementSystem.java
+Step 3: Run Application
+java FinanceManagementSystem
+Application Modules
+1. Billing System
 
-Or download ZIP and extract.
+Used to:
 
-Step 2: Open Terminal in Project Folder
+Add products
+Calculate totals
+Generate customer bills
+Billing Fields
+Item Name
+Price
+Quantity
+2. Expense Tracker
 
-Example:
+Used to:
 
-cd BillingSystem
-Step 3: Compile Java File
-javac BillingSystemGUI.java
-Step 4: Run Application
-java BillingSystemGUI
-Application Workflow
-Enter Product Name
-Enter Product Price
-Enter Product Quantity
+Record daily expenses
+Categorize spending
+Track total expenses
+Expense Categories
+Food
+Travel
+Shopping
+Electricity
+Internet
+Miscellaneous
+3. Dashboard
+
+Displays:
+
+Total Sales
+Total Expenses
+Net Profit
+Formula Used
+Profit = Total Sales - Total Expenses
+GUI Components Used
+Component	Purpose
+JFrame	Main window
+JPanel	Layout management
+JTable	Display records
+JTextField	User input
+JButton	Actions
+JTextArea	Bill receipt
+JComboBox	Expense categories
+JTabbedPane	Multiple modules
+Sample Workflow
+Billing
+Enter item details
 Click Add Item
 Click Generate Bill
-Bill receipt will appear on the right side
-Sample Bill Output
-XYZ SHOP
-Kochi, Kerala
-
-====================================
-Item       Price      Qty      Total
-====================================
-Pen        10         5        50
-Book       100        2        200
-====================================
-
-Subtotal : 250
-GST 18%  : 45
-Final Amt: 295
-====================================
-Thank You Visit Again!
-Concepts Used
-Object-Oriented Programming (OOP)
-Swing Components
-Event Handling
-Layout Managers
-JTable
-String Formatting
-Exception Handling
-Future Improvements
-
-You can enhance this project by adding:
-
-MySQL Database Integration
-Login Authentication
-Customer Details
-Inventory Management
-Barcode Scanner
-Save Bill as PDF
-Print Functionality
-Dark Mode UI
-Admin Dashboard
+Expense Tracking
+Enter expense details
+Select category
+Click Add Expense
+Dashboard
+Automatically updates profit
 Learning Outcomes
 
-By building this project, you will learn:
+This project helps you learn:
 
 Java GUI Development
 Swing Event Handling
-Desktop Application Design
-Billing Logic Implementation
-Data Management Basics
-Author
+JTable Management
+Desktop Application Development
+Financial Data Handling
+Object-Oriented Programming
+Future Enhancements
 
-Developed as a Java Mini Project for learning GUI application development.
+You can improve this project by adding:
+
+MySQL Database Integration
+Login System
+Save Bills
+PDF Export
+Charts & Graphs
+Inventory Management
+Dark Mode
+Print Support
+Resume Description
+
+Developed a Java Swing-based Finance Management System integrating Billing and Personal Expense Tracking with features like JTable records, bill generation, expense management, and profit calculation.
 
 License
 
